@@ -1,0 +1,44 @@
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1a1a1a; /* Темный фон для контраста */
+    color: #ffffff; /* Белый текст */
+}
+
+h1 {
+    text-align: center;
+    color: #00ff00; /* Ярко неоновый зеленый цвет для заголовка */
+}
+
+.question {
+    margin-bottom: 10px;
+    border: 2px solid #00ff00; /* Неоновая рамка вокруг вопросов */
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.answer-button {
+    cursor: pointer;
+    padding: 10px;
+    border: 2px solid #00ff00; /* Неоновая рамка для кнопок ответов */
+    margin-top: 5px;
+    display: inline-block;
+    width: 100%;
+    text-align: left;
+    background-color: #1a1a1a; /* Темный фон для кнопок */
+    color: #00ff00; /* Неоновый зеленый текст */
+    transition: background-color 0.3s, color 0.3s; /* Плавный переход */
+}
+
+.answer-button:hover {
+    background-color: #00ff00; /* Изменение фона при наведении */
+    color: #1a1a1a; /* Изменение цвета текста при наведении */
+}
+
+.result {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 18px;
+    color: #00ff00; /* Неоновый зеленый цвет для результата */
+}
