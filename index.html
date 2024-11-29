@@ -1,85 +1,97 @@
 <!DOCTYPE html>
 <html>
+<html lang="ru">
 <head>
-    <html>
-        <head>
-            <title>Квиз Игра про Интернет в эпоху его зарождения</title>
-    </head>
-        <body>
-            <h1>Квиз Игра про Интернет в эпоху его зарождения</h1>
-            <div id="quiz">
-                <div class="question" data-correct="2">
-                    <p>Что такое интернет?</p>
-                    <div class="answer-button" data-answer="1">1. Система взаимосвязанных компьютеров</div>
-                    <div class="answer-button" data-answer="2">2.Глобальная сеть, изменившая общество, экономику и культуру </div>
-                    <div class="answer-button" data-answer="3">3. Операционная система</div>
-                </div>
-                <div class="question" data-correct="2">
-                    <p>Что такое ARPANET</p>
-                    <div class="answer-button" data-answer="1">1. Коммерческая сеть для бизнеса</div>
-                    <div class="answer-button" data-answer="2">2. Сеть для обмена данными между исследовательскими центрами./div>
-                    <div class="answer-button" data-answer="3">3. Социальная сеть</div>
-                </div>
-                <div class="question" data-correct="3">
-                    <p>Кто разработал протоколы TCP и IP</p>
-                    <div class="answer-button" data-answer="1">1. Тим Бернерс-Ли</div>
-                    <div class="answer-button" data-answer="2">2. Ларри Пейдж и Сергей Брин</div>
-                    <div class="answer-button" data-answer="3">3. Винтон Серф и Боб Кан</div>
-                </div>
-                <div class="question" data-correct="1">
-                    <p>Что такое локальная сеть (LAN)</p>
-                    <div class="answer-button" data-answer="1">1. Сеть, которая соединяет компьютеры и устройства в ограниченной географической области, такой как дом, офис или учебное заведение.</div>
-                    <div class="answer-button" data-answer="2">2. Сеть, которая соединяет устройства на больших расстояниях, например, между городами или странами.</div>
-                    <div class="answer-button" data-answer="3">3. Сеть для передачи данных между государствами </div>
-                </div>
-                <div class="question" data-correct="2">
-                    <p>Какое влияние оказал интернет на образование и науку?</p>
-                    <div class="answer-button" data-answer="1">1. Ограничил доступ к информации</div>
-                    <div class="answer-button" data-answer="2">2. Предоставил доступ к огромным объемам информации и возможности для удаленного сотрудничества</div>
-                    <div class="answer-button" data-answer="3">3. Уменьшил количество учебных заведений</div>
-                </div><div class="question" data-correct="1">
-                    <p>Что такое WWW?</p>
-                    <div class="answer-button" data-answer="1">1. Это система взаимосвязанных гипертекстовых документов, доступных через интернет. </div>
-                    <div class="answer-button" data-answer="2">2. Коммерческая сеть для бизнеса</div>
-                    <div class="answer-button" data-answer="3">3. Сеть для передачи данных между государствами</div>
-                </div><div class="question" data-correct="1">
-                    <p>то разработал Всемирную паутину (WWW)</p>
-                    <div class="answer-button" data-answer="1">1. Тим Бернерс-Ли</div>
-                    <div class="answer-button" data-answer="2">2. Ларри Пейдж и Сергей Брин</div>
-                    <div class="answer-button" data-answer="3">3. Винтон Серф и Боб Кан</div>
-                </div><div class="question" data-correct="3">
-                    <p>Когда началась коммерциализация Интернета?</p>
-                    <div class="answer-button" data-answer="1">1. 1960-х</div>
-                    <div class="answer-button" data-answer="2">2. 1970-х</div>
-                    <div class="answer-button" data-answer="3">3. 1980-х</div>
-                </div><div class="question" data-correct="2">
-                    <p>Какое влияние оказал интернет на социальные изменения?</p>
-                    <div class="answer-button" data-answer="1">1. Убрал возможность общения между людьми</div>
-                    <div class="answer-button" data-answer="2">2. Создал новые платформы для общения и культурного взаимодействия</div>
-                    <div class="answer-button" data-answer="3">3. Ограничил доступ к информации</div>
-                </div><div class="question" data-correct="1">
-                    <p>Какое из следующих утверждений верно о развитии глобальных сетей (WAN)?</p>
-                    <div class="answer-button" data-answer="1">1. Они соединяют устройства на больших расстояниях</div>
-                    <div class="answer-button" data-answer="2">2. Они не используются в бизнесе</div>
-                    <div class="answer-button" data-answer="3">3. Они являются устаревшими технологиями</div>
-                </div>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Квиз Игра про Интернет в эпоху его зарождения</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <div class="container mx-auto p-4">
+        <h1 class="text-3xl font-bold mb-6 text-center">Квиз Игра про Интернет в эпоху его зарождения</h1>
+        <div id="quiz" class="space-y-6">
+            <div class="question p-4 bg-white rounded shadow" data-correct="2">
+                <p class="mb-4">1.Что такое интернет?</p>
+                <div class="answer-button p-2 bg-gray-200 rounded cursor-pointer" data-answer="1">1. Система взаимосвязанных компьютеров</div>
+                <div class="answer-button p-2 bg-gray-200 rounded cursor-pointer" data-answer="2">2. Глобальная сеть, изменившая общество, экономику и культуру</div>
+                <div class="answer-button p-2 bg-gray-200 rounded cursor-pointer" data-answer="3">3. Операционная система</div>
             </div>
-            <div class="result" id="result"></div>
-        
-            <script>
-                document.querySelectorAll('.answer-button').forEach(button => {
-                    button.addEventListener('click', function() {
-                        const question = this.parentElement;
-                        const correctAnswer = question.getAttribute('data-correct');
-                        const selectedAnswer = this.getAttribute('data-answer');
-                        if (correctAnswer === selectedAnswer) {
-                            alert('Правильно!');
-                        } else {
-                            alert('Неправильно! Правильный ответ: ' + correctAnswer);
-                        }
-                    });
+            <div class="question p-4 bg-white rounded shadow" data-correct="2">
+                <p class="mb-4">2.Что такое ARPANET?</p>
+                <div class="answer-button p-2 bg-gray-200 rounded cursor-pointer" data-answer="1">1. Коммерческая сеть для бизнеса</div>
+                <div class="answer-button p-2 bg-gray-200 rounded cursor-pointer" data-answer="2">2. Сеть для обмена данными между исследовательскими центрами</div>
+                <div class="answer-button p-2 bg-gray-200 rounded cursor-pointer" data-answer="3">3. Социальная сеть</div>
+            </div>
+            <div class="question p-4 bg-white rounded shadow" data-correct="3">
+                <p class="mb-4">3.Кто разработал протоколы TCP и IP?</p>
+                <div class="answer-button p-2 bg-gray-200 rounded cursor-pointer" data-answer="1">1. Тим Бернерс-Ли</div>
+                <div class="answer-button p-2 bg-gray-200 rounded cursor-pointer" data-answer="2">2. Ларри Пейдж и Сергей Брин</div>
+                <div class="answer-button p-2 bg-gray-200 rounded cursor-pointer" data-answer="3">3. Винтон Серф и Боб Кан</div>
+            </div>
+            <div class="question p-4 bg-white rounded shadow" data-correct="1">
+                <p class="mb-4">4.Что такое локальная сеть(LAN)?</p>
+                <div class="answer-button p-2 bg-gray-200 rounded cursor-pointer" data-answer="1">1. Сеть, которая соединяет компьютеры и устройства в ограниченной географической области, такой как дом, офис или учебное заведение.</div>
+                <div class="answer-button p-2 bg-gray-200 rounded cursor-pointer" data-answer="2">2. Сеть, которая соединяет устройства на больших расстояниях, например, между городами или странами.</div>
+                <div class="answer-button p-2 bg-gray-200 rounded cursor-pointer" data-answer="3">3. Сеть для передачи данных между государствами</div>
+            </div>
+            <div class="question p-4 bg-white rounded shadow" data-correct="2">
+                <p class="mb-4">5.Какое влияние оказал интернет на образование и науку?</p>
+                <div class="answer-button p-2 bg-gray-200 rounded cursor-pointer" data-answer="1">1. Ограничил доступ к информации</div>
+                <div class="answer-button p-2 bg-gray-200 rounded cursor-pointer" data-answer="2">2. Предоставил доступ к огромным объемам информации и возможности для удаленного сотрудничества</div>
+                <div class="answer-button p-2 bg-gray-200 rounded cursor-pointer" data-answer="3">3. Уменьшил количество учебных заведений</div>
+            </div>
+            <div class="question p-4 bg-white rounded shadow" data-correct="1">
+                <p class="mb-4">6.Что такое WWW?</p>
+                <div class="answer-button p-2 bg-gray-200 rounded cursor-pointer" data-answer="1">1. Это система взаимосвязанных гипертекстовых документов, доступных через интернет.</div>
+                <div class="answer-button p-2 bg-gray-200 rounded cursor-pointer" data-answer="2">2. Коммерческая сеть для бизнеса</div>
+                <div class="answer-button p-2 bg-gray-200 rounded cursor-pointer" data-answer="3">3. Сеть для передачи данных между государствами</div>
+            </div>
+            <div class="question p-4 bg-white rounded shadow" data-correct="1">
+                <p class="mb-4">7.Кто разработал Всемирную паутину (WWW)?</p>
+                <div class="answer-button p-2 bg-gray-200 rounded cursor-pointer" data-answer="1">1. Тим Бернерс-Ли</div>
+                <div class="answer-button p-2 bg-gray-200 rounded cursor-pointer" data-answer="2">2. Ларри Пейдж и Сергей Брин</div>
+                <div class="answer-button p-2 bg-gray-200 rounded cursor-pointer" data-answer="3">3. Винтон Серф и Боб Кан</div>
+            </div>
+            <div class="question p-4 bg-white rounded shadow" data-correct="3">
+                <p class="mb-4">8.Когда началась коммерциализация Интернета?</p>
+                <div class="answer-button p-2 bg-gray-200 rounded cursor-pointer" data-answer="1">1. 1960-х</div>
+                <div class="answer-button p-2 bg-gray-200 rounded cursor-pointer" data-answer="2">2. 1970-х</div>
+                <div class="answer-button p-2 bg-gray-200 rounded cursor-pointer" data-answer="3">3. 1980-х</div>
+            </div>
+            <div class="question p-4 bg-white rounded shadow" data-correct="2">
+                <p class="mb-4">9.Какое влияние оказал интернет на социальные изменения?</p>
+                <div class="answer-button p-2 bg-gray-200 rounded cursor-pointer" data-answer="1">1. Убрал возможность общения между людьми</div>
+                <div class="answer-button p-2 bg-gray-200 rounded cursor-pointer" data-answer="2">2. Создал новые платформы для общения и культурного взаимодействия</div>
+                <div class="answer-button p-2 bg-gray-200 rounded cursor-pointer" data-answer="3">3. Ограничил доступ к информации</div>
+            </div>
+            <div class="question p-4 bg-white rounded shadow" data-correct="1">
+                <p class="mb-4">10.Какое из следующих утверждений верно о развитии глобальных сетей (WAN)?</p>
+                <div class="answer-button p-2 bg-gray-200 rounded cursor-pointer" data-answer="1">1. Они соединяют устройства на больших расстояниях</div>
+                <div class="answer-button p-2 bg-gray-200 rounded cursor-pointer" data-answer="2">2. Они не используются в бизнесе</div>
+                <div class="answer-button p-2 bg-gray-200 rounded cursor-pointer" data-answer="3">3. Они являются устаревшими технологиями</div>
+            </div>
+        </div>
+        <div class="result mt-6 p-4 bg-white rounded shadow" id="result"></div>
+    </div>
+    <script>
+        document.querySelectorAll('.answer-button').forEach(button => {
+            button.addEventListener('click', function() {
+                const question = this.parentElement;
+                const correctAnswer = question.getAttribute('data-correct');
+                const selectedAnswer = this.getAttribute('data-answer');
+                question.querySelectorAll('.answer-button').forEach(btn => {
+                    btn.classList.remove('bg-green-200', 'bg-red-200');
+                    if (btn.getAttribute('data-answer') === correctAnswer) {
+                        btn.classList.add('bg-green-200');
+                    } else if (btn.getAttribute('data-answer') === selectedAnswer) {
+                        btn.classList.add('bg-red-200');
+                    }
                 });
-            </script>
-        </body>
-        </html>
+            });
+        });
+    </script>
+</body>
+</html>
 <link rel="stylesheet" type="text/css" href="styles.css">
